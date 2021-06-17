@@ -12,7 +12,8 @@ app.use(cors());
 app.use(express.json());
 app.use(expressFileUpload());
 
-const uri = process.env.ATLAS_URI;
+const uri =
+  "mongodb+srv://binarflow:maodou999@cluster0.zinv2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useCreateIndex: true,
